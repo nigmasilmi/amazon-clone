@@ -2,25 +2,24 @@ import React from 'react';
 import './Checkout.css';
 import Subtotal from './Subtotal/Subtotal';
 import { useStateValue } from '../../Providers/StateProvider';
-import classes from '../Products/Product/Product.module.css';
+import CheckoutProduct from '../Products/CheckoutProduct/CheckoutProduct';
 
 
 const CheckOut = (props) => {
     const [state, dispatch] = useStateValue();
     console.log('state', state);
-    const myShoppingCart = state.cart.map(item => {
+    const myShoppingCart = state.cart.map((item, i) => {
 
         return (
-            <div className={classes.product}>
-                <div className={classes.product__info}>
-                    <p>{item.title}</p>
-                    <p className={classes.product__price}>
-                        <small>$</small>
-                        <strong>{item.price}</strong>
-                    </p>
-                </div>
-                <img src={item.img} alt={item.title} />
-            </div>
+            // id, img, title, price, rating
+            <CheckoutProduct
+                key={item.id + i}
+                id={item.id}
+                img={item.img}
+                title={item.title}
+                price={item.price}
+                rating={item.rating}
+            />
         )
     });
     return (
