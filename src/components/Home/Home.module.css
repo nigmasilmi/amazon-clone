@@ -22,9 +22,11 @@
 .home__row{
     display: flex;
     position: relative;
+    max-width: 80%;
+    flex-wrap: wrap;
     z-index: 1;
-    margin-left: 5px;
-    margin-right: 5px;
+   margin: 0 auto;
+    justify-content: center;
 }
 
 

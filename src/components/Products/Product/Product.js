@@ -1,7 +1,23 @@
 import React from 'react';
 import classes from './Product.module.css';
+import { useStateValue } from '../../../Providers/StateProvider';
 
-const product = ({ title, img, price, rating }) => {
+const Product = ({ id, title, img, price, rating }) => {
+    const [state, dispatch] = useStateValue();
+
+    const addToCart = () => {
+        dispatch({
+            type: 'ADD_TO_CART',
+            item: {
+                id: id,
+                title: title,
+                price: price,
+                rating: rating,
+                img: img
+            }
+        })
+    }
+
     return (
         <div className={classes.product}>
             <div className={classes.product__info}>
@@ -17,9 +33,9 @@ const product = ({ title, img, price, rating }) => {
                 {/* add to cart */}
             </div>
             <img src={img} alt={title} />
-            <button>Add to cart</button>
+            <button onClick={addToCart}>Add to cart</button>
         </div>
     )
 }
 
-export default product;
+export default Product;
