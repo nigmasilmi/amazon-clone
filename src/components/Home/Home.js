@@ -17,8 +17,54 @@ const home = (props) => {
                         img="https://res.cloudinary.com/dz3gm9c3w/image/upload/v1605481414/amazon-clone/DualShock4_in3l1c.jpg" alt="DualShock wireless"
                         rating={3}
                     />
-                    <Product />
-                    <Product />
+                    <Product
+                        title="DualShock wireless"
+                        price="64.99"
+                        img="https://res.cloudinary.com/dz3gm9c3w/image/upload/v1605481414/amazon-clone/DualShock4_in3l1c.jpg" alt="DualShock wireless"
+                        rating={3}
+                    />
+                    <Product
+                        title="DualShock wireless"
+                        price="64.99"
+                        img="https://res.cloudinary.com/dz3gm9c3w/image/upload/v1605481414/amazon-clone/DualShock4_in3l1c.jpg" alt="DualShock wireless"
+                        rating={3}
+                    />
+                    <Product
+                        title="DualShock wireless"
+                        price="64.99"
+                        img="https://res.cloudinary.com/dz3gm9c3w/image/upload/v1605481414/amazon-clone/DualShock4_in3l1c.jpg" alt="DualShock wireless"
+                        rating={3}
+                    />
+                    <Product
+                        title="DualShock wireless"
+                        price="64.99"
+                        img="https://res.cloudinary.com/dz3gm9c3w/image/upload/v1605481414/amazon-clone/DualShock4_in3l1c.jpg" alt="DualShock wireless"
+                        rating={3}
+                    />
+                    <Product
+                        title="DualShock wireless"
+                        price="64.99"
+                        img="https://res.cloudinary.com/dz3gm9c3w/image/upload/v1605481414/amazon-clone/DualShock4_in3l1c.jpg" alt="DualShock wireless"
+                        rating={3}
+                    />
+                    <Product
+                        title="DualShock wireless"
+                        price="64.99"
+                        img="https://res.cloudinary.com/dz3gm9c3w/image/upload/v1605481414/amazon-clone/DualShock4_in3l1c.jpg" alt="DualShock wireless"
+                        rating={3}
+                    />
+                    <Product
+                        title="DualShock wireless"
+                        price="64.99"
+                        img="https://res.cloudinary.com/dz3gm9c3w/image/upload/v1605481414/amazon-clone/DualShock4_in3l1c.jpg" alt="DualShock wireless"
+                        rating={3}
+                    />
+                    <Product
+                        title="DualShock wireless"
+                        price="64.99"
+                        img="https://res.cloudinary.com/dz3gm9c3w/image/upload/v1605481414/amazon-clone/DualShock4_in3l1c.jpg" alt="DualShock wireless"
+                        rating={3}
+                    />
                 </div>
             </div>
 
