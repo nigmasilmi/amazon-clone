@@ -4,12 +4,16 @@ import { Search } from '@material-ui/icons';
 import { ShoppingBasket } from '@material-ui/icons';
 import { Link } from 'react-router-dom';
 import { useStateValue } from '../../Providers/StateProvider';
+import { auth } from '../../firebase';
 
 
 
 const Header = (props) => {
     const [state, dispatch] = useStateValue();
 
+    const handleAuthentication = () => {
+        auth.signOut();
+    };
 
     const basketClasses = [classes.header__basketCount, classes.header__subcatLine2].join(' ');
     return (
@@ -32,11 +36,17 @@ const Header = (props) => {
                     <span className={classes.header__subcatLine1}>Returns</span>
                     <span className={classes.header__subcatLine2}>& Orders</span>
                 </div>
-
-                <div className={classes.header__subcat}>
-                    <span className={classes.header__subcatLine1}>Hello</span>
-                    <span className={classes.header__subcatLine2}>Sign In</span>
-                </div>
+                <Link to={!state.user && "/login"}>
+                    <div
+                        className={classes.header__subcat}
+                        onClick={handleAuthentication}
+                    >
+                        <span className={classes.header__subcatLine1}>
+                            Hello, {' '}{state?.user.email}</span>
+                        <span className={classes.header__subcatLine2}>
+                            {state.user ? 'Log out' : 'Sign in'}</span>
+                    </div>
+                </Link>}
                 <Link to="/checkout">
                     <div className={classes.header__subcatBasket}>
                         <ShoppingBasket />
