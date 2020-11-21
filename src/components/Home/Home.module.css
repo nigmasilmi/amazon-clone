@@ -32,7 +32,13 @@
 
 
 @media(max-width: 635px) {
+    .home{
+        flex-direction: column;
+    }
    .home__row {
        flex-flow: column;
+   }
+   .home__hero{
+       margin-bottom: -300px;
    }
 }

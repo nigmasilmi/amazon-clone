@@ -43,3 +43,13 @@
     border-color: #a88734 #9c7e31 #846a29;
     color: #111;
 }
+
+@media(max-width: 635px) {
+
+    .product{
+        flex: 1 18rem;
+        padding: 10px;
+    }
+
+
+}

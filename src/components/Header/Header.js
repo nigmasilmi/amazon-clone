@@ -9,7 +9,7 @@ import { auth } from '../../firebase';
 
 
 const Header = (props) => {
-    const [state, dispatch] = useStateValue();
+    const [state] = useStateValue();
 
     const handleAuthentication = () => {
         auth.signOut();
@@ -26,27 +26,36 @@ const Header = (props) => {
                 <Search className={classes.header__searchIcon} />
             </div>
             <div className={classes.header__nav}>
-
                 <div className={classes.header__subcat}>
                     <span className={classes.header__subcatLine1}>Hello</span>
                     <span className={classes.header__subcatLine2}>Accounts & Lists</span>
                 </div>
-
-                <div className={classes.header__subcat}>
-                    <span className={classes.header__subcatLine1}>Returns</span>
-                    <span className={classes.header__subcatLine2}>& Orders</span>
-                </div>
-                <Link to={!state.user && "/login"}>
-                    <div
-                        className={classes.header__subcat}
-                        onClick={handleAuthentication}
-                    >
-                        <span className={classes.header__subcatLine1}>
-                            Hello, {' '}{state?.user.email}</span>
-                        <span className={classes.header__subcatLine2}>
-                            {state.user ? 'Log out' : 'Sign in'}</span>
+                <Link to="/orders">
+                    <div className={classes.header__subcat}>
+                        <span className={classes.header__subcatLine1}>Returns</span>
+                        <span className={classes.header__subcatLine2}>& Orders</span>
                     </div>
-                </Link>}
+                </Link>
+                {state.user ?
+                    <Link to={"/"}>
+                        <div
+                            className={classes.header__subcat}
+                            onClick={handleAuthentication}
+                        >
+                            <span className={classes.header__subcatLine1}>
+                                Hello, {' '}{state.user?.email}</span>
+                            <span className={classes.header__subcatLine2}>
+                                Log out</span>
+                        </div>
+                    </Link>
+                    : <Link to={"/login"}>
+                        <div className={classes.header__subcat}>
+                            <span className={classes.header__subcatLine1}>
+                                Hello, Guest</span>
+                            <span className={classes.header__subcatLine2}>
+                                Sign in</span>
+                        </div>
+                    </Link>}
                 <Link to="/checkout">
                     <div className={classes.header__subcatBasket}>
                         <ShoppingBasket />

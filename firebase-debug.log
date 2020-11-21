@@ -1,0 +1,567 @@
+[debug] [2020-11-18T00:47:23.818Z] ----------------------------------------------------------------------
+[debug] [2020-11-18T00:47:23.828Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Nigma\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2020-11-18T00:47:23.828Z] CLI Version:   8.16.2
+[debug] [2020-11-18T00:47:23.828Z] Platform:      win32
+[debug] [2020-11-18T00:47:23.828Z] Node Version:  v12.18.3
+[debug] [2020-11-18T00:47:23.828Z] Time:          Tue Nov 17 2020 21:47:23 GMT-0300 (GMT-03:00)
+[debug] [2020-11-18T00:47:23.828Z] ----------------------------------------------------------------------
+[debug] [2020-11-18T00:47:23.828Z] 
+[debug] [2020-11-18T00:47:23.839Z] >>> [apiv2][query] GET https://firebase-public.firebaseio.com/cli.json [none]
+[debug] [2020-11-18T00:47:23.909Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2020-11-18T00:47:23.915Z] > authorizing via signed-in user
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\Users\Nigma\CODEGYM\amazon-clone\amazon-clone
+
+[debug] [2020-11-18T00:47:24.845Z] <<< [apiv2][status] GET https://firebase-public.firebaseio.com/cli.json 200
+[debug] [2020-11-18T00:47:24.848Z] <<< [apiv2][body] GET https://firebase-public.firebaseio.com/cli.json {"cloudBuildErrorAfter":1594252800000,"cloudBuildWarnAfter":1590019200000,"defaultNode10After":1594252800000,"minVersion":"3.0.5","node8DeploysDisabledAfter":1613390400000,"node8RuntimeDisabledAfter":1615809600000,"node8WarnAfter":1600128000000}
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2020-11-18T00:48:37.872Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2020-11-18T00:48:37.874Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2020-11-18T00:48:38.104Z] <<< HTTP RESPONSE 200 {"pragma":"no-cache","date":"Wed, 18 Nov 2020 00:48:37 GMT","cache-control":"no-cache, no-store, max-age=0, must-revalidate","expires":"Mon, 01 Jan 1990 00:00:00 GMT","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-Q050=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2020-11-18T00:48:38.355Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects?pageSize=100  
+ 
+[debug] [2020-11-18T00:48:39.950Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Wed, 18 Nov 2020 00:48:39 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-Q050=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[info] i  Using project clone-3e6cf (amazon-clone) 
+[info] 
+=== Hosting Setup
+[info] 
+[info] Your public directory is the folder (relative to your project directory) that
+[info] will contain Hosting assets to be uploaded with firebase deploy. If you
+[info] have a build process for your assets, use your build's output directory.
+[info] 
+[debug] [2020-11-18T00:50:04.714Z] >>> HTTP REQUEST GET https://www.gstatic.com/firebasejs/releases.json  
+ 
+[debug] [2020-11-18T00:50:04.831Z] <<< HTTP RESPONSE 200 {"accept-ranges":"bytes","vary":"Accept-Encoding, Origin","content-type":"application/json","cross-origin-resource-policy":"cross-origin","content-length":"1411","date":"Wed, 18 Nov 2020 00:01:48 GMT","expires":"Wed, 18 Nov 2020 00:51:48 GMT","last-modified":"Fri, 13 Nov 2020 00:33:17 GMT","x-content-type-options":"nosniff","server":"sffe","x-xss-protection":"0","cache-control":"public, max-age=3000","age":"2896","alt-svc":"h3-Q050=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\""}
+[info] +  Wrote build/index.html 
+[info] 
+[info] i  Detected a .git folder at C:\Users\Nigma\CODEGYM\amazon-clone\amazon-clone 
+[info] i  Authorizing with GitHub to upload your service account to a GitHub repository's secrets store. 
+[info] 
+[info] Visit this URL on this device to log in:
+[info] https://github.com/login/oauth/authorize?client_id=89cf50f02ac6aaed3484&state=104998523&redirect_uri=http%3A%2F%2Flocalhost%3A9005&scope=read%3Auser%20repo%20public_repo
+[info] 
+[info] Waiting for authentication...
+[debug] [2020-11-18T00:50:45.884Z] >>> HTTP REQUEST POST https://github.com/login/oauth/access_token  
+ {"client_id":"89cf50f02ac6aaed3484","client_secret":"3330d14abc895d9a74d5f17cd7a00711fa2c5bf0","code":"b739c538c78085c69787","redirect_uri":"http://localhost:9005","state":"104998523"}
+[debug] [2020-11-18T00:50:46.955Z] <<< HTTP RESPONSE 200 {"server":"GitHub.com","date":"Wed, 18 Nov 2020 00:50:46 GMT","content-type":"application/json; charset=utf-8","transfer-encoding":"chunked","status":"200 OK","vary":"X-PJAX, Accept-Encoding, Accept, X-Requested-With","etag":"W/\"41212d53c098e076dffd21286fb55946\"","cache-control":"max-age=0, private, must-revalidate","strict-transport-security":"max-age=31536000; includeSubdomains; preload","x-frame-options":"deny","x-content-type-options":"nosniff","x-xss-protection":"1; mode=block","referrer-policy":"origin-when-cross-origin, strict-origin-when-cross-origin","expect-ct":"max-age=2592000, report-uri=\"https://api.github.com/_private/browser/errors\"","content-security-policy":"default-src 'none'; base-uri 'self'; block-all-mixed-content; connect-src 'self' uploads.github.com www.githubstatus.com collector.githubapp.com api.github.com github-cloud.s3.amazonaws.com github-production-repository-file-5c1aeb.s3.amazonaws.com github-production-upload-manifest-file-7fdce7.s3.amazonaws.com github-production-user-asset-6210df.s3.amazonaws.com cdn.optimizely.com logx.optimizely.com/v1/events wss://alive.github.com; font-src github.githubassets.com; form-action 'self' github.com gist.github.com; frame-ancestors 'none'; frame-src render.githubusercontent.com; img-src 'self' data: github.githubassets.com identicons.github.com collector.githubapp.com github-cloud.s3.amazonaws.com *.githubusercontent.com; manifest-src 'self'; media-src 'none'; script-src github.githubassets.com; style-src 'unsafe-inline' github.githubassets.com; worker-src github.com/socket-worker.js gist.github.com/socket-worker.js","x-github-request-id":"E0C3:45D4:1DA624:3659E7:5FB46FE5"}
+[debug] [2020-11-18T00:50:47.233Z] >>> HTTP REQUEST GET https://api.github.com/user  
+ 
+[debug] [2020-11-18T00:50:47.842Z] <<< HTTP RESPONSE 200 {"server":"GitHub.com","date":"Wed, 18 Nov 2020 00:50:47 GMT","content-type":"application/json; charset=utf-8","content-length":"1455","status":"200 OK","cache-control":"private, max-age=60, s-maxage=60","vary":"Accept, Authorization, Cookie, X-GitHub-OTP, Accept-Encoding, Accept, X-Requested-With","etag":"\"27b9425509a9464d7340e26b0a90d673addeca1fdc8f6615636b441f400cc87c\"","last-modified":"Wed, 18 Nov 2020 00:50:44 GMT","x-oauth-scopes":"read:user, repo","x-accepted-oauth-scopes":"","x-oauth-client-id":"89cf50f02ac6aaed3484","x-github-media-type":"github.v3","x-ratelimit-limit":"5000","x-ratelimit-remaining":"4998","x-ratelimit-reset":"1605663618","x-ratelimit-used":"2","access-control-expose-headers":"ETag, Link, Location, Retry-After, X-GitHub-OTP, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Used, X-RateLimit-Reset, X-OAuth-Scopes, X-Accepted-OAuth-Scopes, X-Poll-Interval, X-GitHub-Media-Type, Deprecation, Sunset","access-control-allow-origin":"*","strict-transport-security":"max-age=31536000; includeSubdomains; preload","x-frame-options":"deny","x-content-type-options":"nosniff","x-xss-protection":"1; mode=block","referrer-policy":"origin-when-cross-origin, strict-origin-when-cross-origin","content-security-policy":"default-src 'none'","x-github-request-id":"E0C5:2A28:7E6DBD:1587D91:5FB46FE6"}
+[info] 
+[info] +  Success! Logged into GitHub as nigmasilmi 
+[info] 
+[debug] [2020-11-18T00:52:14.104Z] >>> HTTP REQUEST GET https://api.github.com/repos/ nigmasilmi //actions/secrets/public-key?type=owner  
+ 
+[debug] [2020-11-18T00:52:14.591Z] <<< HTTP RESPONSE 404 {"server":"GitHub.com","date":"Wed, 18 Nov 2020 00:52:13 GMT","content-type":"application/json; charset=utf-8","content-length":"74","status":"404 Not Found","x-oauth-scopes":"read:user, repo","x-accepted-oauth-scopes":"repo","x-oauth-client-id":"89cf50f02ac6aaed3484","x-github-media-type":"github.v3","x-ratelimit-limit":"5000","x-ratelimit-remaining":"4997","x-ratelimit-reset":"1605663618","x-ratelimit-used":"3","access-control-expose-headers":"ETag, Link, Location, Retry-After, X-GitHub-OTP, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Used, X-RateLimit-Reset, X-OAuth-Scopes, X-Accepted-OAuth-Scopes, X-Poll-Interval, X-GitHub-Media-Type, Deprecation, Sunset","access-control-allow-origin":"*","strict-transport-security":"max-age=31536000; includeSubdomains; preload","x-frame-options":"deny","x-content-type-options":"nosniff","x-xss-protection":"1; mode=block","referrer-policy":"origin-when-cross-origin, strict-origin-when-cross-origin","content-security-policy":"default-src 'none'","vary":"Accept-Encoding, Accept, X-Requested-With","x-github-request-id":"E0CC:3593:763091:14820B2:5FB4703D"}
+[debug] [2020-11-18T00:52:14.922Z] <<< HTTP RESPONSE BODY Not Found {"message":"Not Found","documentation_url":"https://docs.github.com/rest"}
+[debug] [2020-11-18T00:52:39.393Z] >>> HTTP REQUEST GET https://api.github.com/repos/amazon-clone https://github.com/nigmasilmi/amazon-clone//actions/secrets/public-key?type=owner  
+ 
+[debug] [2020-11-18T00:52:39.824Z] <<< HTTP RESPONSE 404 {"server":"GitHub.com","date":"Wed, 18 Nov 2020 00:52:39 GMT","content-type":"application/json; charset=utf-8","content-length":"74","status":"404 Not Found","x-oauth-scopes":"read:user, repo","x-accepted-oauth-scopes":"repo","x-oauth-client-id":"89cf50f02ac6aaed3484","x-github-media-type":"github.v3","x-ratelimit-limit":"5000","x-ratelimit-remaining":"4996","x-ratelimit-reset":"1605663618","x-ratelimit-used":"4","access-control-expose-headers":"ETag, Link, Location, Retry-After, X-GitHub-OTP, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Used, X-RateLimit-Reset, X-OAuth-Scopes, X-Accepted-OAuth-Scopes, X-Poll-Interval, X-GitHub-Media-Type, Deprecation, Sunset","access-control-allow-origin":"*","strict-transport-security":"max-age=31536000; includeSubdomains; preload","x-frame-options":"deny","x-content-type-options":"nosniff","x-xss-protection":"1; mode=block","referrer-policy":"origin-when-cross-origin, strict-origin-when-cross-origin","content-security-policy":"default-src 'none'","vary":"Accept-Encoding, Accept, X-Requested-With","x-github-request-id":"E0CD:7DA9:35B9990:5A1EFB0:5FB47056"}
+[debug] [2020-11-18T00:52:40.167Z] <<< HTTP RESPONSE BODY Not Found {"message":"Not Found","documentation_url":"https://docs.github.com/rest"}
+[debug] [2020-11-18T00:53:14.366Z] >>> HTTP REQUEST GET https://api.github.com/repos//actions/secrets/public-key?type=owner  
+ 
+[debug] [2020-11-18T00:53:14.806Z] <<< HTTP RESPONSE 404 {"server":"GitHub.com","date":"Wed, 18 Nov 2020 00:53:13 GMT","content-type":"application/json; charset=utf-8","content-length":"74","status":"404 Not Found","x-oauth-scopes":"read:user, repo","x-accepted-oauth-scopes":"repo","x-oauth-client-id":"89cf50f02ac6aaed3484","x-github-media-type":"github.v3","x-ratelimit-limit":"5000","x-ratelimit-remaining":"4995","x-ratelimit-reset":"1605663618","x-ratelimit-used":"5","access-control-expose-headers":"ETag, Link, Location, Retry-After, X-GitHub-OTP, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Used, X-RateLimit-Reset, X-OAuth-Scopes, X-Accepted-OAuth-Scopes, X-Poll-Interval, X-GitHub-Media-Type, Deprecation, Sunset","access-control-allow-origin":"*","strict-transport-security":"max-age=31536000; includeSubdomains; preload","x-frame-options":"deny","x-content-type-options":"nosniff","x-xss-protection":"1; mode=block","referrer-policy":"origin-when-cross-origin, strict-origin-when-cross-origin","content-security-policy":"default-src 'none'","vary":"Accept-Encoding, Accept, X-Requested-With","x-github-request-id":"E0CE:223B:1CA329A:4329CA2:5FB47079"}
+[debug] [2020-11-18T00:53:14.813Z] <<< HTTP RESPONSE BODY Not Found {"message":"Not Found","documentation_url":"https://docs.github.com/rest"}
+[debug] [2020-11-18T00:53:37.954Z] >>> HTTP REQUEST GET https://api.github.com/repos/https://github.com/nigmasilmi/amazon-clone//actions/secrets/public-key?type=owner  
+ 
+[debug] [2020-11-18T00:53:38.438Z] <<< HTTP RESPONSE 404 {"server":"GitHub.com","date":"Wed, 18 Nov 2020 00:53:37 GMT","content-type":"application/json; charset=utf-8","content-length":"74","status":"404 Not Found","x-oauth-scopes":"read:user, repo","x-accepted-oauth-scopes":"repo","x-oauth-client-id":"89cf50f02ac6aaed3484","x-github-media-type":"github.v3","x-ratelimit-limit":"5000","x-ratelimit-remaining":"4994","x-ratelimit-reset":"1605663618","x-ratelimit-used":"6","access-control-expose-headers":"ETag, Link, Location, Retry-After, X-GitHub-OTP, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Used, X-RateLimit-Reset, X-OAuth-Scopes, X-Accepted-OAuth-Scopes, X-Poll-Interval, X-GitHub-Media-Type, Deprecation, Sunset","access-control-allow-origin":"*","strict-transport-security":"max-age=31536000; includeSubdomains; preload","x-frame-options":"deny","x-content-type-options":"nosniff","x-xss-protection":"1; mode=block","referrer-policy":"origin-when-cross-origin, strict-origin-when-cross-origin","content-security-policy":"default-src 'none'","vary":"Accept-Encoding, Accept, X-Requested-With","x-github-request-id":"E0CF:1051:3BA948A:6447BE3:5FB47091"}
+[debug] [2020-11-18T00:53:38.710Z] <<< HTTP RESPONSE BODY Not Found {"message":"Not Found","documentation_url":"https://docs.github.com/rest"}
+[debug] [2020-11-18T00:53:51.435Z] >>> HTTP REQUEST GET https://api.github.com/repos/https://github.com/nigmasilmi/amazon-clone/actions/secrets/public-key?type=owner  
+ 
+[debug] [2020-11-18T00:53:51.854Z] <<< HTTP RESPONSE 404 {"server":"GitHub.com","date":"Wed, 18 Nov 2020 00:53:51 GMT","content-type":"application/json; charset=utf-8","content-length":"74","status":"404 Not Found","x-oauth-scopes":"read:user, repo","x-accepted-oauth-scopes":"repo","x-oauth-client-id":"89cf50f02ac6aaed3484","x-github-media-type":"github.v3","x-ratelimit-limit":"5000","x-ratelimit-remaining":"4993","x-ratelimit-reset":"1605663618","x-ratelimit-used":"7","access-control-expose-headers":"ETag, Link, Location, Retry-After, X-GitHub-OTP, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Used, X-RateLimit-Reset, X-OAuth-Scopes, X-Accepted-OAuth-Scopes, X-Poll-Interval, X-GitHub-Media-Type, Deprecation, Sunset","access-control-allow-origin":"*","strict-transport-security":"max-age=31536000; includeSubdomains; preload","x-frame-options":"deny","x-content-type-options":"nosniff","x-xss-protection":"1; mode=block","referrer-policy":"origin-when-cross-origin, strict-origin-when-cross-origin","content-security-policy":"default-src 'none'","vary":"Accept-Encoding, Accept, X-Requested-With","x-github-request-id":"E0D0:4665:341CD75:59106E8:5FB4709E"}
+[debug] [2020-11-18T00:53:52.145Z] <<< HTTP RESPONSE BODY Not Found {"message":"Not Found","documentation_url":"https://docs.github.com/rest"}
+[debug] [2020-11-18T00:54:09.350Z] ----------------------------------------------------------------------
+[debug] [2020-11-18T00:54:09.360Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Nigma\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2020-11-18T00:54:09.360Z] CLI Version:   8.16.2
+[debug] [2020-11-18T00:54:09.360Z] Platform:      win32
+[debug] [2020-11-18T00:54:09.360Z] Node Version:  v12.18.3
+[debug] [2020-11-18T00:54:09.368Z] Time:          Tue Nov 17 2020 21:54:09 GMT-0300 (GMT-03:00)
+[debug] [2020-11-18T00:54:09.368Z] ----------------------------------------------------------------------
+[debug] [2020-11-18T00:54:09.368Z] 
+[debug] [2020-11-18T00:54:09.390Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2020-11-18T00:54:09.404Z] > authorizing via signed-in user
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\Users\Nigma\CODEGYM\amazon-clone\amazon-clone
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2020-11-18T00:54:23.168Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects?pageSize=100  
+ 
+[debug] [2020-11-18T00:54:23.882Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Wed, 18 Nov 2020 00:54:23 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-Q050=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[info] i  Using project clone-3e6cf (amazon-clone) 
+[info] 
+=== Hosting Setup
+[info] 
+[info] Your public directory is the folder (relative to your project directory) that
+[info] will contain Hosting assets to be uploaded with firebase deploy. If you
+[info] have a build process for your assets, use your build's output directory.
+[info] 
+[debug] [2020-11-18T00:54:41.077Z] >>> HTTP REQUEST GET https://www.gstatic.com/firebasejs/releases.json  
+ 
+[debug] [2020-11-18T00:54:41.142Z] <<< HTTP RESPONSE 200 {"accept-ranges":"bytes","vary":"Accept-Encoding, Origin","content-type":"application/json","cross-origin-resource-policy":"cross-origin","content-length":"1411","date":"Wed, 18 Nov 2020 00:54:40 GMT","expires":"Wed, 18 Nov 2020 01:44:40 GMT","last-modified":"Fri, 13 Nov 2020 00:33:17 GMT","x-content-type-options":"nosniff","server":"sffe","x-xss-protection":"0","cache-control":"public, max-age=3000","age":"0","alt-svc":"h3-Q050=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\""}
+[info] +  Wrote build/index.html 
+[debug] [2020-11-18T01:16:10.621Z] ----------------------------------------------------------------------
+[debug] [2020-11-18T01:16:10.642Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Nigma\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2020-11-18T01:16:10.642Z] CLI Version:   8.16.2
+[debug] [2020-11-18T01:16:10.642Z] Platform:      win32
+[debug] [2020-11-18T01:16:10.642Z] Node Version:  v12.18.3
+[debug] [2020-11-18T01:16:10.652Z] Time:          Tue Nov 17 2020 22:16:10 GMT-0300 (GMT-03:00)
+[debug] [2020-11-18T01:16:10.652Z] ----------------------------------------------------------------------
+[debug] [2020-11-18T01:16:10.652Z] 
+[debug] [2020-11-18T01:16:10.721Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2020-11-18T01:16:10.743Z] > authorizing via signed-in user
+[debug] [2020-11-18T01:16:11.292Z] [iam] checking project clone-3e6cf for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2020-11-18T01:16:11.445Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/clone-3e6cf:testIamPermissions  
+ {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2020-11-18T01:16:14.612Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Wed, 18 Nov 2020 01:16:13 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","server-timing":"gfet4t7; dur=872","alt-svc":"h3-Q050=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2020-11-18T01:16:15.027Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/clone-3e6cf  
+ 
+[debug] [2020-11-18T01:16:18.344Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Wed, 18 Nov 2020 01:16:17 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-Q050=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[info] 
+[info] === Deploying to 'clone-3e6cf'...
+[info] 
+[info] i  deploying hosting 
+[debug] [2020-11-18T01:16:23.845Z] >>> HTTP REQUEST POST https://firebasehosting.googleapis.com/v1beta1/sites/clone-3e6cf/versions  
+ {"config":{"rewrites":[{"glob":"**","path":"/index.html"}]},"labels":{"deployment-tool":"cli-firebase"}}
+[debug] [2020-11-18T01:16:27.548Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Wed, 18 Nov 2020 01:16:26 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-Q050=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[info] i  hosting[clone-3e6cf]: beginning deploy... 
+[info] i  hosting[clone-3e6cf]: found 18 files in build 
+[debug] [2020-11-18T01:16:28.490Z] [hosting] hash cache [YnVpbGQ] not populated
+[debug] [2020-11-18T01:16:40.161Z] [hosting] hash cache [YnVpbGQ] stored for 18 files
+[debug] [2020-11-18T01:16:40.242Z] [hosting][hash queue][FINAL] {"max":11022,"min":1217,"avg":2195.5,"active":0,"complete":18,"success":18,"errored":0,"retried":0,"total":18,"elapsed":11234}
+[debug] [2020-11-18T01:16:40.409Z] >>> HTTP REQUEST POST https://firebasehosting.googleapis.com/v1beta1/sites/clone-3e6cf/versions/8647f69cd569aed4:populateFiles  
+ <request body omitted>
+[debug] [2020-11-18T01:16:43.224Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Wed, 18 Nov 2020 01:16:41 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-Q050=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2020-11-18T01:16:43.842Z] [hosting][populate queue][FINAL] {"max":3445,"min":3445,"avg":3445,"active":0,"complete":1,"success":1,"errored":0,"retried":0,"total":1,"elapsed":3714}
+[debug] [2020-11-18T01:16:44.696Z] [hosting] uploads queued: 18
+[debug] [2020-11-18T01:16:57.371Z] [hosting][upload queue][FINAL] {"max":13811,"min":7497,"avg":8188.388888888889,"active":0,"complete":18,"success":18,"errored":0,"retried":0,"total":18,"elapsed":13815}
+[info] +  hosting[clone-3e6cf]: file upload complete 
+[debug] [2020-11-18T01:16:58.171Z] [hosting] deploy completed after 30301ms
+[debug] [2020-11-18T01:16:58.207Z] [
+  {
+    "config": {
+      "public": "build",
+      "ignore": [
+        "firebase.json",
+        "**/.*",
+        "**/node_modules/**"
+      ],
+      "rewrites": [
+        {
+          "source": "**",
+          "destination": "/index.html"
+        }
+      ],
+      "site": "clone-3e6cf"
+    },
+    "site": "clone-3e6cf",
+    "version": "sites/clone-3e6cf/versions/8647f69cd569aed4"
+  }
+]
+[info] i  hosting[clone-3e6cf]: finalizing version... 
+[debug] [2020-11-18T01:16:58.811Z] >>> HTTP REQUEST PATCH https://firebasehosting.googleapis.com/v1beta1/sites/clone-3e6cf/versions/8647f69cd569aed4?updateMask=status  
+ {"status":"FINALIZED"}
+[debug] [2020-11-18T01:17:00.382Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Wed, 18 Nov 2020 01:16:59 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-Q050=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2020-11-18T01:17:00.395Z] [hosting] finalized version for clone-3e6cf: {"name":"sites/clone-3e6cf/versions/8647f69cd569aed4","status":"FINALIZED","config":{"rewrites":[{"glob":"**","path":"/index.html"}]},"labels":{"deployment-tool":"cli-firebase"},"createTime":"2020-11-18T01:16:25.786474Z","createUser":{"email":"SN.Silmi@gmail.com"},"finalizeTime":"2020-11-18T01:16:59.590978Z","finalizeUser":{"email":"SN.Silmi@gmail.com"}}
+[info] +  hosting[clone-3e6cf]: version finalized 
+[info] i  hosting[clone-3e6cf]: releasing new version... 
+[debug] [2020-11-18T01:17:02.008Z] >>> HTTP REQUEST POST https://firebasehosting.googleapis.com/v1beta1/sites/clone-3e6cf/releases?version_name=sites/clone-3e6cf/versions/8647f69cd569aed4  
+ {"message":null}
+[debug] [2020-11-18T01:17:03.578Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Wed, 18 Nov 2020 01:17:02 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-Q050=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2020-11-18T11:09:10.099Z] ----------------------------------------------------------------------
+[debug] [2020-11-18T11:09:10.099Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Nigma\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2020-11-18T11:09:10.099Z] CLI Version:   8.16.2
+[debug] [2020-11-18T11:09:10.099Z] Platform:      win32
+[debug] [2020-11-18T11:09:10.099Z] Node Version:  v12.18.3
+[debug] [2020-11-18T11:09:10.099Z] Time:          Wed Nov 18 2020 08:09:10 GMT-0300 (GMT-03:00)
+[debug] [2020-11-18T11:09:10.114Z] ----------------------------------------------------------------------
+[debug] [2020-11-18T11:09:10.114Z] 
+[debug] [2020-11-18T11:09:10.267Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2020-11-18T11:09:10.286Z] > authorizing via signed-in user
+[debug] [2020-11-18T11:09:10.331Z] [iam] checking project clone-3e6cf for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2020-11-18T11:09:10.382Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2020-11-18T11:09:10.447Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2020-11-18T11:09:10.714Z] <<< HTTP RESPONSE 200 {"pragma":"no-cache","cache-control":"no-cache, no-store, max-age=0, must-revalidate","expires":"Mon, 01 Jan 1990 00:00:00 GMT","date":"Wed, 18 Nov 2020 11:09:09 GMT","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-Q050=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2020-11-18T11:09:10.908Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/clone-3e6cf:testIamPermissions  
+ {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2020-11-18T11:09:12.085Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Wed, 18 Nov 2020 11:09:10 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","server-timing":"gfet4t7; dur=921","alt-svc":"h3-Q050=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2020-11-18T11:09:12.173Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/clone-3e6cf  
+ 
+[debug] [2020-11-18T11:09:13.171Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Wed, 18 Nov 2020 11:09:11 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-Q050=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[info] 
+[info] === Deploying to 'clone-3e6cf'...
+[info] 
+[info] i  deploying hosting 
+[debug] [2020-11-18T11:09:13.719Z] >>> HTTP REQUEST POST https://firebasehosting.googleapis.com/v1beta1/sites/clone-3e6cf/versions  
+ {"config":{"rewrites":[{"glob":"**","path":"/index.html"}]},"labels":{"deployment-tool":"cli-firebase"}}
+[debug] [2020-11-18T11:09:15.357Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Wed, 18 Nov 2020 11:09:13 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-Q050=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[info] i  hosting[clone-3e6cf]: beginning deploy... 
+[info] i  hosting[clone-3e6cf]: found 18 files in build 
+[debug] [2020-11-18T11:09:16.710Z] [hosting] hash cache [YnVpbGQ] stored for 18 files
+[debug] [2020-11-18T11:09:16.711Z] [hosting][hash queue][FINAL] {"max":1059,"min":15,"avg":108.38888888888889,"active":0,"complete":18,"success":18,"errored":0,"retried":0,"total":18,"elapsed":1086}
+[debug] [2020-11-18T11:09:16.765Z] >>> HTTP REQUEST POST https://firebasehosting.googleapis.com/v1beta1/sites/clone-3e6cf/versions/8bb90749ab70c835:populateFiles  
+ <request body omitted>
+[debug] [2020-11-18T11:09:17.956Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Wed, 18 Nov 2020 11:09:16 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-Q050=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2020-11-18T11:09:18.008Z] [hosting][populate queue][FINAL] {"max":1289,"min":1289,"avg":1289,"active":0,"complete":1,"success":1,"errored":0,"retried":0,"total":1,"elapsed":1306}
+[debug] [2020-11-18T11:09:18.082Z] [hosting] uploads queued: 10
+[debug] [2020-11-18T11:09:21.551Z] [hosting][upload queue][FINAL] {"max":3560,"min":2215,"avg":2902.6,"active":0,"complete":10,"success":10,"errored":0,"retried":0,"total":10,"elapsed":3563}
+[info] +  hosting[clone-3e6cf]: file upload complete 
+[debug] [2020-11-18T11:09:21.643Z] [hosting] deploy completed after 6107ms
+[debug] [2020-11-18T11:09:21.647Z] [
+  {
+    "config": {
+      "public": "build",
+      "ignore": [
+        "firebase.json",
+        "**/.*",
+        "**/node_modules/**"
+      ],
+      "rewrites": [
+        {
+          "source": "**",
+          "destination": "/index.html"
+        }
+      ],
+      "site": "clone-3e6cf"
+    },
+    "site": "clone-3e6cf",
+    "version": "sites/clone-3e6cf/versions/8bb90749ab70c835"
+  }
+]
+[info] i  hosting[clone-3e6cf]: finalizing version... 
+[debug] [2020-11-18T11:09:21.769Z] >>> HTTP REQUEST PATCH https://firebasehosting.googleapis.com/v1beta1/sites/clone-3e6cf/versions/8bb90749ab70c835?updateMask=status  
+ {"status":"FINALIZED"}
+[debug] [2020-11-18T11:09:22.952Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Wed, 18 Nov 2020 11:09:21 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-Q050=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2020-11-18T11:09:23.037Z] [hosting] finalized version for clone-3e6cf: {"name":"sites/clone-3e6cf/versions/8bb90749ab70c835","status":"FINALIZED","config":{"rewrites":[{"glob":"**","path":"/index.html"}]},"labels":{"deployment-tool":"cli-firebase"},"createTime":"2020-11-18T11:09:13.200989Z","createUser":{"email":"SN.Silmi@gmail.com"},"finalizeTime":"2020-11-18T11:09:21.272571Z","finalizeUser":{"email":"SN.Silmi@gmail.com"}}
+[info] +  hosting[clone-3e6cf]: version finalized 
+[info] i  hosting[clone-3e6cf]: releasing new version... 
+[debug] [2020-11-18T11:09:23.134Z] >>> HTTP REQUEST POST https://firebasehosting.googleapis.com/v1beta1/sites/clone-3e6cf/releases?version_name=sites/clone-3e6cf/versions/8bb90749ab70c835  
+ {"message":null}
+[debug] [2020-11-18T11:09:24.353Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Wed, 18 Nov 2020 11:09:22 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-Q050=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2020-11-18T11:25:00.881Z] ----------------------------------------------------------------------
+[debug] [2020-11-18T11:25:00.889Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Nigma\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2020-11-18T11:25:00.894Z] CLI Version:   8.16.2
+[debug] [2020-11-18T11:25:00.894Z] Platform:      win32
+[debug] [2020-11-18T11:25:00.894Z] Node Version:  v12.18.3
+[debug] [2020-11-18T11:25:00.894Z] Time:          Wed Nov 18 2020 08:25:00 GMT-0300 (GMT-03:00)
+[debug] [2020-11-18T11:25:00.894Z] ----------------------------------------------------------------------
+[debug] [2020-11-18T11:25:00.894Z] 
+[debug] [2020-11-18T11:25:00.934Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2020-11-18T11:25:00.939Z] > authorizing via signed-in user
+[debug] [2020-11-18T11:25:00.939Z] [iam] checking project clone-3e6cf for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2020-11-18T11:25:00.959Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/clone-3e6cf:testIamPermissions  
+ {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2020-11-18T11:25:02.154Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Wed, 18 Nov 2020 11:25:00 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","server-timing":"gfet4t7; dur=912","alt-svc":"h3-Q050=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2020-11-18T11:25:02.159Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/clone-3e6cf  
+ 
+[debug] [2020-11-18T11:25:03.070Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Wed, 18 Nov 2020 11:25:01 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-Q050=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[info] 
+[info] === Deploying to 'clone-3e6cf'...
+[info] 
+[info] i  deploying hosting 
+[debug] [2020-11-18T11:25:03.085Z] >>> HTTP REQUEST POST https://firebasehosting.googleapis.com/v1beta1/sites/clone-3e6cf/versions  
+ {"config":{"rewrites":[{"glob":"**","path":"/index.html"}]},"labels":{"deployment-tool":"cli-firebase"}}
+[debug] [2020-11-18T11:25:04.619Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Wed, 18 Nov 2020 11:25:02 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-Q050=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[info] i  hosting[clone-3e6cf]: beginning deploy... 
+[info] i  hosting[clone-3e6cf]: found 18 files in build 
+[debug] [2020-11-18T11:25:06.175Z] [hosting] hash cache [YnVpbGQ] stored for 18 files
+[debug] [2020-11-18T11:25:06.179Z] [hosting][hash queue][FINAL] {"max":1481,"min":45,"avg":186.22222222222223,"active":0,"complete":18,"success":18,"errored":0,"retried":0,"total":18,"elapsed":1505}
+[debug] [2020-11-18T11:25:06.179Z] >>> HTTP REQUEST POST https://firebasehosting.googleapis.com/v1beta1/sites/clone-3e6cf/versions/57750c7cbba70c98:populateFiles  
+ <request body omitted>
+[info] i  hosting: adding files to version [0/18] (0%) 
+[debug] [2020-11-18T11:25:07.400Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Wed, 18 Nov 2020 11:25:05 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-Q050=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2020-11-18T11:25:07.400Z] [hosting][populate queue][FINAL] {"max":1225,"min":1225,"avg":1225,"active":0,"complete":1,"success":1,"errored":0,"retried":0,"total":1,"elapsed":1225}
+[debug] [2020-11-18T11:25:07.400Z] [hosting] uploads queued: 0
+[debug] [2020-11-18T11:25:07.400Z] [hosting][upload queue][FINAL] {"max":0,"min":9999999999,"avg":0,"active":0,"complete":0,"success":0,"errored":0,"retried":0,"total":0,"elapsed":1605698707400}
+[info] +  hosting[clone-3e6cf]: file upload complete 
+[debug] [2020-11-18T11:25:07.405Z] [hosting] deploy completed after 2775ms
+[debug] [2020-11-18T11:25:07.409Z] [
+  {
+    "config": {
+      "public": "build",
+      "ignore": [
+        "firebase.json",
+        "**/.*",
+        "**/node_modules/**"
+      ],
+      "rewrites": [
+        {
+          "source": "**",
+          "destination": "/index.html"
+        }
+      ],
+      "site": "clone-3e6cf"
+    },
+    "site": "clone-3e6cf",
+    "version": "sites/clone-3e6cf/versions/57750c7cbba70c98"
+  }
+]
+[info] i  hosting[clone-3e6cf]: finalizing version... 
+[debug] [2020-11-18T11:25:07.409Z] >>> HTTP REQUEST PATCH https://firebasehosting.googleapis.com/v1beta1/sites/clone-3e6cf/versions/57750c7cbba70c98?updateMask=status  
+ {"status":"FINALIZED"}
+[debug] [2020-11-18T11:25:08.634Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Wed, 18 Nov 2020 11:25:06 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-Q050=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2020-11-18T11:25:08.634Z] [hosting] finalized version for clone-3e6cf: {"name":"sites/clone-3e6cf/versions/57750c7cbba70c98","status":"FINALIZED","config":{"rewrites":[{"glob":"**","path":"/index.html"}]},"labels":{"deployment-tool":"cli-firebase"},"createTime":"2020-11-18T11:25:02.530693Z","createUser":{"email":"SN.Silmi@gmail.com"},"finalizeTime":"2020-11-18T11:25:06.940071Z","finalizeUser":{"email":"SN.Silmi@gmail.com"}}
+[info] +  hosting[clone-3e6cf]: version finalized 
+[info] i  hosting[clone-3e6cf]: releasing new version... 
+[debug] [2020-11-18T11:25:08.640Z] >>> HTTP REQUEST POST https://firebasehosting.googleapis.com/v1beta1/sites/clone-3e6cf/releases?version_name=sites/clone-3e6cf/versions/57750c7cbba70c98  
+ {"message":null}
+[debug] [2020-11-18T11:25:09.824Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Wed, 18 Nov 2020 11:25:08 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-Q050=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2020-11-18T16:14:24.088Z] ----------------------------------------------------------------------
+[debug] [2020-11-18T16:14:24.104Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Nigma\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2020-11-18T16:14:24.104Z] CLI Version:   8.16.2
+[debug] [2020-11-18T16:14:24.104Z] Platform:      win32
+[debug] [2020-11-18T16:14:24.104Z] Node Version:  v12.18.3
+[debug] [2020-11-18T16:14:24.104Z] Time:          Wed Nov 18 2020 13:14:24 GMT-0300 (GMT-03:00)
+[debug] [2020-11-18T16:14:24.104Z] ----------------------------------------------------------------------
+[debug] [2020-11-18T16:14:24.104Z] 
+[debug] [2020-11-18T16:14:24.133Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2020-11-18T16:14:24.141Z] > authorizing via signed-in user
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\Users\Nigma\CODEGYM\amazon-clone\amazon-clone
+
+Before we get started, keep in mind:
+
+  * You are initializing in an existing Firebase project directory
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[info] i  .firebaserc already has a default project, using clone-3e6cf. 
+[debug] [2020-11-18T16:15:13.736Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2020-11-18T16:15:13.844Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2020-11-18T16:15:14.089Z] <<< HTTP RESPONSE 200 {"expires":"Mon, 01 Jan 1990 00:00:00 GMT","pragma":"no-cache","date":"Wed, 18 Nov 2020 16:15:12 GMT","cache-control":"no-cache, no-store, max-age=0, must-revalidate","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-Q050=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2020-11-18T16:15:14.244Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/clone-3e6cf  
+ 
+[debug] [2020-11-18T16:15:15.205Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Wed, 18 Nov 2020 16:15:14 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-Q050=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[info] 
+=== Functions Setup
+[info] 
+[info] A functions directory will be created in your project with a Node.js
+[info] package pre-configured. Functions can be deployed with firebase deploy.
+[info] 
+[debug] [2020-11-18T16:15:15.501Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2020-11-18T16:15:15.510Z] > authorizing via signed-in user
+[debug] [2020-11-18T16:15:15.558Z] [iam] checking project clone-3e6cf for permissions ["firebase.projects.get"]
+[debug] [2020-11-18T16:15:15.567Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/clone-3e6cf:testIamPermissions  
+ {"permissions":["firebase.projects.get"]}
+[debug] [2020-11-18T16:15:16.643Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Wed, 18 Nov 2020 16:15:15 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","server-timing":"gfet4t7; dur=827","alt-svc":"h3-Q050=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2020-11-18T16:15:16.757Z] >>> HTTP REQUEST POST https://serviceusage.googleapis.com/v1/projects/clone-3e6cf/services/cloudfunctions.googleapis.com:enable  
+ 
+[debug] [2020-11-18T16:15:16.844Z] >>> HTTP REQUEST POST https://serviceusage.googleapis.com/v1/projects/clone-3e6cf/services/runtimeconfig.googleapis.com:enable  
+ 
+[debug] [2020-11-18T16:15:17.923Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Wed, 18 Nov 2020 16:15:16 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-Q050=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2020-11-18T16:15:17.968Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Wed, 18 Nov 2020 16:15:16 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-Q050=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[info] +  Wrote functions/package.json 
+[info] +  Wrote functions/.eslintrc.json 
+[info] +  Wrote functions/index.js 
+[info] +  Wrote functions/.gitignore 
+[info] 
+[debug] [2020-11-21T17:28:20.362Z] ----------------------------------------------------------------------
+[debug] [2020-11-21T17:28:20.371Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Nigma\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy --only functions
+[debug] [2020-11-21T17:28:20.372Z] CLI Version:   8.16.2
+[debug] [2020-11-21T17:28:20.374Z] Platform:      win32
+[debug] [2020-11-21T17:28:20.387Z] Node Version:  v12.18.3
+[debug] [2020-11-21T17:28:20.394Z] Time:          Sat Nov 21 2020 14:28:20 GMT-0300 (GMT-03:00)
+[debug] [2020-11-21T17:28:20.394Z] ----------------------------------------------------------------------
+[debug] [2020-11-21T17:28:20.395Z] 
+[debug] [2020-11-21T17:28:20.440Z] >>> [apiv2][query] GET https://firebase-public.firebaseio.com/cli.json [none]
+[debug] [2020-11-21T17:28:20.892Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2020-11-21T17:28:21.119Z] > authorizing via signed-in user
+[debug] [2020-11-21T17:28:21.604Z] [iam] checking project clone-3e6cf for permissions ["cloudfunctions.functions.create","cloudfunctions.functions.delete","cloudfunctions.functions.get","cloudfunctions.functions.list","cloudfunctions.functions.update","cloudfunctions.operations.get","firebase.projects.get"]
+[debug] [2020-11-21T17:28:22.403Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2020-11-21T17:28:22.871Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2020-11-21T17:28:24.012Z] <<< HTTP RESPONSE 200 {"pragma":"no-cache","expires":"Mon, 01 Jan 1990 00:00:00 GMT","cache-control":"no-cache, no-store, max-age=0, must-revalidate","date":"Sat, 21 Nov 2020 17:28:22 GMT","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2020-11-21T17:28:25.855Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/clone-3e6cf:testIamPermissions  
+ {"permissions":["cloudfunctions.functions.create","cloudfunctions.functions.delete","cloudfunctions.functions.get","cloudfunctions.functions.list","cloudfunctions.functions.update","cloudfunctions.operations.get","firebase.projects.get"]}
+[debug] [2020-11-21T17:28:27.524Z] <<< [apiv2][status] GET https://firebase-public.firebaseio.com/cli.json 200
+[debug] [2020-11-21T17:28:27.624Z] <<< [apiv2][body] GET https://firebase-public.firebaseio.com/cli.json {"cloudBuildErrorAfter":1594252800000,"cloudBuildWarnAfter":1590019200000,"defaultNode10After":1594252800000,"minVersion":"3.0.5","node8DeploysDisabledAfter":1613390400000,"node8RuntimeDisabledAfter":1615809600000,"node8WarnAfter":1600128000000}
+[debug] [2020-11-21T17:28:28.992Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Sat, 21 Nov 2020 17:28:26 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","server-timing":"gfet4t7; dur=820","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2020-11-21T17:28:29.742Z] >>> HTTP REQUEST POST https://iam.googleapis.com/v1/projects/clone-3e6cf/serviceAccounts/clone-3e6cf@appspot.gserviceaccount.com:testIamPermissions  
+ {"permissions":["iam.serviceAccounts.actAs"]}
+[debug] [2020-11-21T17:28:31.792Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Sat, 21 Nov 2020 17:28:29 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[info] 
+[info] === Deploying to 'clone-3e6cf'...
+[info] 
+[info] i  deploying functions 
+[info] Running command: npm --prefix "$RESOURCE_DIR" run lint
+[info] +  functions: Finished running predeploy script. 
+[debug] [2020-11-21T17:29:54.988Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "12"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "firebase-admin": "^9.2.0",
+    "firebase-functions": "^3.11.0",
+    "stripe": "^8.122.1"
+  },
+  "devDependencies": {
+    "eslint": "^5.12.0",
+    "eslint-plugin-promise": "^4.0.1",
+    "firebase-functions-test": "^0.2.0"
+  },
+  "private": true
+}
+[info] i  functions: ensuring required API cloudfunctions.googleapis.com is enabled... 
+[info] i  functions: ensuring required API cloudbuild.googleapis.com is enabled... 
+[debug] [2020-11-21T17:30:04.116Z] >>> HTTP REQUEST GET https://serviceusage.googleapis.com/v1/projects/clone-3e6cf/services/cloudfunctions.googleapis.com  
+ 
+[debug] [2020-11-21T17:30:04.264Z] >>> HTTP REQUEST GET https://serviceusage.googleapis.com/v1/projects/clone-3e6cf/services/runtimeconfig.googleapis.com  
+ 
+[debug] [2020-11-21T17:30:04.374Z] >>> HTTP REQUEST GET https://serviceusage.googleapis.com/v1/projects/clone-3e6cf/services/cloudbuild.googleapis.com  
+ 
+[debug] [2020-11-21T17:30:05.573Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Sat, 21 Nov 2020 17:30:03 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2020-11-21T17:30:05.757Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Sat, 21 Nov 2020 17:30:03 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[warn] !  functions: missing required API cloudbuild.googleapis.com. Enabling now... 
+[debug] [2020-11-21T17:30:06.178Z] >>> HTTP REQUEST POST https://serviceusage.googleapis.com/v1/projects/clone-3e6cf/services/cloudbuild.googleapis.com:enable  
+ 
+[debug] [2020-11-21T17:30:06.234Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Sat, 21 Nov 2020 17:30:03 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[info] +  functions: required API cloudfunctions.googleapis.com is enabled 
+[debug] [2020-11-21T17:30:07.525Z] <<< HTTP RESPONSE 400 {"vary":"X-Origin, Referer, Origin,Accept-Encoding","content-type":"application/json; charset=UTF-8","date":"Sat, 21 Nov 2020 17:30:05 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2020-11-21T17:30:07.644Z] <<< HTTP RESPONSE BODY {"error":{"code":400,"message":"Billing account for project '1031226818492' is not found. Billing must be enabled for activation of service(s) 'cloudbuild.googleapis.com,containerregistry.googleapis.com' to proceed.","status":"FAILED_PRECONDITION","details":[{"@type":"type.googleapis.com/google.rpc.PreconditionFailure","violations":[{"type":"googleapis.com/billing-enabled","subject":"?error_code=390001&project=1031226818492&services=cloudbuild.googleapis.com&services=containerregistry.googleapis.com"}]},{"@type":"type.googleapis.com/google.rpc.ErrorInfo","reason":"UREQ_PROJECT_BILLING_NOT_FOUND","domain":"serviceusage.googleapis.com/billing-enabled","metadata":{"project":"1031226818492","services":"cloudbuild.googleapis.com,containerregistry.googleapis.com"}}]}}
+[error] 
+[error] Error: HTTP Error: 400, Billing account for project '1031226818492' is not found. Billing must be enabled for activation of service(s) 'cloudbuild.googleapis.com,containerregistry.googleapis.com' to proceed.
+[debug] [2020-11-21T17:30:07.948Z] Error Context: {
+  "body": {
+    "error": {
+      "code": 400,
+      "message": "Billing account for project '1031226818492' is not found. Billing must be enabled for activation of service(s) 'cloudbuild.googleapis.com,containerregistry.googleapis.com' to proceed.",
+      "status": "FAILED_PRECONDITION",
+      "details": [
+        {
+          "@type": "type.googleapis.com/google.rpc.PreconditionFailure",
+          "violations": [
+            {
+              "type": "googleapis.com/billing-enabled",
+              "subject": "?error_code=390001&project=1031226818492&services=cloudbuild.googleapis.com&services=containerregistry.googleapis.com"
+            }
+          ]
+        },
+        {
+          "@type": "type.googleapis.com/google.rpc.ErrorInfo",
+          "reason": "UREQ_PROJECT_BILLING_NOT_FOUND",
+          "domain": "serviceusage.googleapis.com/billing-enabled",
+          "metadata": {
+            "project": "1031226818492",
+            "services": "cloudbuild.googleapis.com,containerregistry.googleapis.com"
+          }
+        }
+      ]
+    }
+  },
+  "response": {
+    "statusCode": 400,
+    "body": {
+      "error": {
+        "code": 400,
+        "message": "Billing account for project '1031226818492' is not found. Billing must be enabled for activation of service(s) 'cloudbuild.googleapis.com,containerregistry.googleapis.com' to proceed.",
+        "status": "FAILED_PRECONDITION",
+        "details": [
+          {
+            "@type": "type.googleapis.com/google.rpc.PreconditionFailure",
+            "violations": [
+              {
+                "type": "googleapis.com/billing-enabled",
+                "subject": "?error_code=390001&project=1031226818492&services=cloudbuild.googleapis.com&services=containerregistry.googleapis.com"
+              }
+            ]
+          },
+          {
+            "@type": "type.googleapis.com/google.rpc.ErrorInfo",
+            "reason": "UREQ_PROJECT_BILLING_NOT_FOUND",
+            "domain": "serviceusage.googleapis.com/billing-enabled",
+            "metadata": {
+              "project": "1031226818492",
+              "services": "cloudbuild.googleapis.com,containerregistry.googleapis.com"
+            }
+          }
+        ]
+      }
+    },
+    "headers": {
+      "vary": "X-Origin, Referer, Origin,Accept-Encoding",
+      "content-type": "application/json; charset=UTF-8",
+      "date": "Sat, 21 Nov 2020 17:30:05 GMT",
+      "server": "ESF",
+      "cache-control": "private",
+      "x-xss-protection": "0",
+      "x-frame-options": "SAMEORIGIN",
+      "x-content-type-options": "nosniff",
+      "alt-svc": "h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"",
+      "accept-ranges": "none",
+      "transfer-encoding": "chunked"
+    },
+    "request": {
+      "uri": {
+        "protocol": "https:",
+        "slashes": true,
+        "auth": null,
+        "host": "serviceusage.googleapis.com",
+        "port": 443,
+        "hostname": "serviceusage.googleapis.com",
+        "hash": null,
+        "search": null,
+        "query": null,
+        "pathname": "/v1/projects/clone-3e6cf/services/cloudbuild.googleapis.com:enable",
+        "path": "/v1/projects/clone-3e6cf/services/cloudbuild.googleapis.com:enable",
+        "href": "https://serviceusage.googleapis.com/v1/projects/clone-3e6cf/services/cloudbuild.googleapis.com:enable"
+      },
+      "method": "POST"
+    }
+  }
+}

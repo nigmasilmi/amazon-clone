@@ -69,10 +69,11 @@
 @media(max-width:625px){
     .header{
         flex-direction:column ;
-        height: 120px;
+        height: 140px;
     }
 
     .header__nav{
         padding: 2%;
     }
 }
+
