@@ -6,7 +6,7 @@ import CheckoutProduct from '../Products/CheckoutProduct/CheckoutProduct';
 
 
 const CheckOut = (props) => {
-    const [state, dispatch] = useStateValue();
+    const [state] = useStateValue();
     console.log('state', state);
     const myShoppingCart = state.cart.map((item, i) => {
 

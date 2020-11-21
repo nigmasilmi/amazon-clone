@@ -7,9 +7,15 @@ import Login from './components/Auth/Login/Login';
 import Checkout from './components/Checkout/Checkout';
 import Header from './components/Header/Header';
 import Home from './components/Home/Home';
+import Payment from './components/Payment/Payment';
+import Orders from './components/Orders/Orders';
+import { loadStripe } from '@stripe/stripe-js';
+import { Elements } from '@stripe/react-stripe-js';
+
+const stripePromise = loadStripe('[publishable key]');
 
 function App() {
-  const [{ }, dispatch] = useStateValue();
+  const [state, dispatch] = useStateValue();
 
   useEffect(() => {
     auth.onAuthStateChanged(authUser => {
@@ -25,7 +31,7 @@ function App() {
         })
       }
     })
-  }, []);
+  }, [dispatch]);
 
   return (
     <Router>
@@ -37,6 +43,16 @@ function App() {
           <Route path="/checkout">
             <Header />
             <Checkout />
+          </Route>
+          <Route path="/orders">
+            <Header />
+            <Orders />
+          </Route>
+          <Route path="/payments">
+            <Header />
+            <Elements stripe={stripePromise}>
+              <Payment />
+            </Elements>
           </Route>
           <Route path="/">
             <Header />
